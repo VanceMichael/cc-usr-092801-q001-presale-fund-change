@@ -1,0 +1,43 @@
+{
+  "title": "预售资金变更与购房人告知闭环领域上下文",
+  "type": "object",
+  "required": [
+    "domain",
+    "version",
+    "actors",
+    "facts",
+    "constraints"
+  ],
+  "properties": {
+    "domain": {
+      "type": "string",
+      "const": "presale-fund-change"
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actors": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "facts": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      }
+    },
+    "constraints": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}
